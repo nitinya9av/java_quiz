@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T15:57:05.394843+00:00",
+  "generatedAt": "2026-04-20T19:13:18.974018+00:00",
   "summary": {
     "weekCount": 13,
     "questionCount": 140,
@@ -1344,7 +1344,12 @@
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Creating a.class file from .java using the javac command is a compilation task, whereas execution of a.class file using java is the process of interpretation."
+            }
+          ],
           "images": []
         },
         {
@@ -1395,13 +1400,18 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "A program \ufb01le writen in Java programming language"
+                  "content": "A program file writen in Java programming language"
                 }
               ]
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "a.class file is a compiled version of the .java file in byte code. It is a kind of object code with the JVM\n(Java Virtual Machine) as the target machine."
+            }
+          ],
           "images": []
         },
         {
@@ -1425,7 +1435,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Encapsula\u019fon"
+                  "content": "Encapsulation"
                 }
               ]
             },
@@ -1452,13 +1462,18 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Dynamic memory alloca\u019fon"
+                  "content": "Dynamic memory allocation"
                 }
               ]
             }
           ],
           "correctOptionId": "d",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Encapsulation, Inheritance, and Polymorphism are core paradigms. Dynamic memory allocation is a\nmemory allocation strategy and not a programming paradigm."
+            }
+          ],
           "images": []
         },
         {
@@ -1515,7 +1530,12 @@
             }
           ],
           "correctOptionId": "d",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The Java development process involves writing code (Edit), converting it to bytecode (Compile), and then\nexecuting it on the JVM (Run)."
+            }
+          ],
           "images": []
         },
         {
@@ -1572,7 +1592,12 @@
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The JDK includes a tool called \u2018javac\u2019 that compiles from Java source code to a target of Java\nbytecodes. The program \u2018java\u2019 is used to execute Java bytecode."
+            }
+          ],
           "images": []
         },
         {
@@ -1596,7 +1621,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Ini\u019faliza\u019fon method"
+                  "content": "Initialization method"
                 }
               ]
             },
@@ -1605,7 +1630,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Execu\u019fon entry point"
+                  "content": "Execution entry point"
                 }
               ]
             },
@@ -1629,7 +1654,12 @@
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The public static void main(String[] args) method is the entry point for the execution of a Java program."
+            }
+          ],
           "images": []
         },
         {
@@ -1653,7 +1683,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Pla\u019eorm Independence"
+                  "content": "Platform Independence"
                 }
               ]
             },
@@ -1686,7 +1716,12 @@
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Java is platform-independent, object-oriented, and secure. It does not support explicit pointers, as they\ncan lead to memory management issues and compromise security."
+            }
+          ],
           "images": []
         },
         {
@@ -1719,7 +1754,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Pla\u019eorm independence"
+                  "content": "Platform independence"
                 }
               ]
             },
@@ -1743,7 +1778,12 @@
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The Java Virtual Machine (JVM) enables platform independence by interpreting Java bytecode, allowing\nJava programs to run on any device with a compatible JVM."
+            }
+          ],
           "images": []
         },
         {
@@ -1808,7 +1848,12 @@
             }
           ],
           "correctOptionId": "a",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Here, x *= (2 + 8) is equivalent to x = x * (2 + 8), which results in x = x * 10. Therefore, x = 5 * 10 => x =\n50."
+            }
+          ],
           "images": []
         },
         {
@@ -1858,7 +1903,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Compila\u019fon Error"
+                  "content": "Compilation Error"
                 }
               ]
             },
@@ -1867,13 +1912,18 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Run\u019fme Error"
+                  "content": "Runtime Error"
                 }
               ]
             }
           ],
           "correctOptionId": "a",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "This is the standard syntax for a Java program to print the string \"Hello, World!\" to the console."
+            }
+          ],
           "images": []
         }
       ]
@@ -1895,12 +1945,54 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "How do you read a line of text from the console using the Scanner class in Java?\nscanner.readLine()\nscanner.nextLine()\nscanner.getLine()\nscanner.fetchLine()"
+              "content": "How do you read a line of text from the console using the Scanner class in Java?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "scanner.readLine()"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "scanner.nextLine()"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "scanner.getLine()"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "scanner.fetchLine()"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The nextLine() method of the Scanner class reads a line of text from the console. Refer to Lecture 10 for\nmore details."
+            }
+          ],
           "images": []
         },
         {
@@ -1920,15 +2012,53 @@
             {
               "type": "code",
               "content": "public class VarPrint {\n    int x = 30;\n    static int y = 20;\n\n    public static void main(String[] args) {\n        VarPrint t1 = new VarPrint();\n        t1.x = 99;\n        t1.y = 88;\n        int z1 = t1.x + t1.y;\n        VarPrint t2 = new VarPrint();\n        System.out.println(t2.x + \" \" + t2.y + \" \" + z1);\n    }\n}"
-            },
-            {
-              "type": "text",
-              "content": "30 99 178\n30 88 129\n30 99 187\n30 88 187"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 99 178"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 88 129"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 99 187"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 88 187"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "d",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "If you perform any change for instance variable these changes won\u2019t be reflected for the remaining\nobjects. Because for every object a separate copy of instance variable will be there. But if you do any\nchange to the static variable, that change will be reflected for all objects because a static instance\nmaintains a single copy in memory.\nPlease refer to chapter 3 of  book Joy With Java for a more detailed explaination."
+            }
+          ],
           "images": []
         },
         {
@@ -1954,9 +2084,51 @@
               "content": "9 7 7 foo34 34foo\n839 45foo45 9foo\n839 459foo45 9foo\n9 7 7 foo 7 7foo"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "9 7 7 foo34 34foo"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "839 45foo45 9foo"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "839 459foo45 9foo"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "9 7 7 foo 7 7foo"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Here, print() methods internally converts the data in its argument into a String object and then print the\ncomposition. Here, + is the concatenation of different String representation.\nPlease refer to chapter 3 of  book Joy With Java for a more detailed explaination."
+            }
+          ],
           "images": []
         },
         {
@@ -1971,12 +2143,62 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What is encapsulation in object-oriented programming?\nHiding implementa\u019fon details and exposing only func\u019fonality\nThe process of crea\u019fng mul\u019fple objects in a program\nWri\u019fng mul\u019fple methods in a single class\nUsing the this keyword to reference an object"
+              "content": "What is encapsulation in object-oriented programming?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Hiding implementation details and exposing only functionality"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The process of creating multiple objects in a program"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Writing multiple methods in a single class"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Using the this keyword to reference an object"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "a",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Please refer to chapter 3 of  book Joy With Java for a more detailed explaination.\nEncapsulation is one of the fundamental principles of object-oriented programming. It involves bundling\nthe data (variables) and the methods (functions) that operate on the data into a single unit, typically a"
+            },
+            {
+              "type": "code",
+              "content": "class. By making certain data private and providing public methods to access or modify it, encapsulation"
+            },
+            {
+              "type": "text",
+              "content": "helps hide implementation details from the outside world while exposing only the required functionality.\nThis improves code modularity, security, and maintainability."
+            }
+          ],
           "images": []
         },
         {
@@ -1999,12 +2221,54 @@
             },
             {
               "type": "text",
-              "content": "What will be the output of the code given above?\n0\n101\n100\nRun\u019fme error"
+              "content": "What will be the output of the code given above?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "0"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "101"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "100"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Runtime error"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The constructor NPTEL_W2 (int x) initializes the instance variable x with the value passed as an\nargument. The method printX() prints the value of x, which is 101. Refer to Lecture 7 for more\ndetails."
+            }
+          ],
           "images": []
         },
         {
@@ -2019,12 +2283,70 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What does the this keyword in Java help to achieve?\nAvoiding name space collision between instance variables and method parameters\nOverloading methods in a class\nAccessing private methods in another class\nCrea\u019fng mul\u019fple objects in a program"
+              "content": "What does the this keyword in Java help to achieve?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Avoiding name space collision between instance variables and method parameters"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Overloading methods in a class"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Accessing private methods in another class"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Creating multiple objects in a program"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "a",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The this keyword is used to refer to the current instance of a class. It is commonly used to resolve\nambiguity when instance variables and method parameters have the same name. For example:"
+            },
+            {
+              "type": "code",
+              "content": "class Example {\n    int value;\n\n    Example(int value) {\n        this.value = value; // Resolves name collision by referring to"
+            },
+            {
+              "type": "text",
+              "content": "the instance variable"
+            },
+            {
+              "type": "code",
+              "content": "    }\n}"
+            },
+            {
+              "type": "text",
+              "content": "Here, this.value refers to the instance variable, while value refers to the parameter of the constructor.\nThis avoids confusion and ensures the proper assignment of values.\nPlease refer book Joy with Java Chapter 3 for mored etailed explaination."
+            }
+          ],
           "images": []
         },
         {
@@ -2039,12 +2361,54 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which method is used as the starting point of execution in a Java program?\ninit method\nstart method\nmain method\nrun method"
+              "content": "Which method is used as the starting point of execution in a Java program?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "init method"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "start method"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "main method"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "run method"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "You are encouraged to review the role of program execution flow in Java on your own.\nNote: Please refer to the book Joy with Java Chapter 3 for more detailed explanation."
+            }
+          ],
           "images": []
         },
         {
@@ -2059,12 +2423,62 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is used to display output in Java?\ninput\ndisplay\nprint\nSystem"
+              "content": "Which of the following is used to display output in Java?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "input"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "display"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "print"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "System"
+                }
+              ]
+            }
+          ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The print method is used to display output on the screen in Java."
+            },
+            {
+              "type": "code",
+              "content": "It is available through the System.out object."
+            },
+            {
+              "type": "text",
+              "content": "You should practice identifying commonly used output statements.\nNote: Please refer to the book Joy with Java Chapter 3 for more detailed explanation."
+            }
+          ],
           "images": []
         },
         {
@@ -2079,20 +2493,54 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which symbol is used to end a statement in Java?\n:\n."
-            },
-            {
-              "type": "code",
-              "content": " ;"
-            },
-            {
-              "type": "text",
-              "content": ","
+              "content": "Which symbol is used to end a statement in Java?"
             }
           ],
-          "options": [],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": ":"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": ";"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": ","
+                }
+              ]
+            }
+          ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "In Java, every statement must end with a semicolon.\nIt tells the compiler that the statement is complete.\nRevise Java syntax rules carefully.\nRefer to Joy with Java Chapter 2 for clarification."
+            }
+          ],
           "images": []
         },
         {
@@ -2107,20 +2555,58 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is a valid Java keyword?\nnumber"
+              "content": "Which of the following is a valid Java keyword?"
+            }
+          ],
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "number"
+                }
+              ]
             },
             {
-              "type": "code",
-              "content": " class"
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "class"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "include"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "define"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The class keyword is used to define a class in Java.\nJava keywords have predefined meanings.\nStudents should memorize basic Java keywords."
             },
             {
               "type": "text",
-              "content": "include\nde\ufb01ne"
+              "content": "Note: Please refer to chapter 3 of  book Joy With Java for a more detailed explaination."
             }
           ],
-          "options": [],
-          "correctOptionId": "b",
-          "solutionBlocks": [],
           "images": []
         }
       ]
@@ -2184,7 +2670,12 @@
             }
           ],
           "correctOptionId": "d",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "On object creation of a derived class, Java ensures that the base (parent) class constructor is executed\nfirst to initialize the parent's state before executing the derived class constructor."
+            }
+          ],
           "images": []
         },
         {
@@ -2241,7 +2732,12 @@
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "In Java, `super()` is used to invoke the constructor of the immediate parent class. It allows the subclass\nto initialize the parent class's state."
+            }
+          ],
           "images": []
         },
         {
@@ -2302,7 +2798,12 @@
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "This is an example of method overriding. Since the object is instantiated as a `Car`, the overridden\n`move` method in the `Car` class is executed, even though the reference type is `Vehicle`."
+            }
+          ],
           "images": []
         },
         {
@@ -2326,7 +2827,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "A \ufb01nal method cannot be overridden in a subclass."
+                  "content": "A final method cannot be overridden in a subclass."
                 }
               ]
             },
@@ -2335,7 +2836,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "A \ufb01nal variable can only be assigned once."
+                  "content": "A final variable can only be assigned once."
                 }
               ]
             },
@@ -2344,7 +2845,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "A \ufb01nal class can have subclasses."
+                  "content": "A final class can have subclasses."
                 }
               ]
             },
@@ -2353,13 +2854,18 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "A \ufb01nal variable can be assigned during declara\u019fon or in the constructor."
+                  "content": "A final variable can be assigned during declaration or in the constructor."
                 }
               ]
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "A class marked as `final` cannot be extended, meaning it cannot be subclassed (it cannot have any child\nclasses)."
+            }
+          ],
           "images": []
         },
         {
@@ -2392,7 +2898,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Mul\u019f-level"
+                  "content": "Multi-level"
                 }
               ]
             },
@@ -2401,7 +2907,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Mul\u019fple"
+                  "content": "Multiple"
                 }
               ]
             },
@@ -2416,7 +2922,12 @@
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The diamond problem arises in multiple inheritance when a class inherits from two classes that have a\ncommon ancestor, leading to ambiguity regarding which path to follow for inherited members. Java\navoids this by not supporting multiple inheritance with classes."
+            }
+          ],
           "images": []
         },
         {
@@ -2473,7 +2984,12 @@
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The `private` access specifier is the most restrictive. Private members are not visible to subclasses and\ntherefore are not inherited."
+            }
+          ],
           "images": []
         },
         {
@@ -2497,7 +3013,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Yes, we can override a sta\u019fc method just like we do with instance methods."
+                  "content": "Yes, we can override a static method just like we do with instance methods."
                 }
               ]
             },
@@ -2506,7 +3022,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "No, sta\u019fc methods cannot be overridden because they belong to the class, not the object."
+                  "content": "No, static methods cannot be overridden because they belong to the class, not the object."
                 }
               ]
             },
@@ -2515,7 +3031,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "It depends on whether the sta\u019fc method is declared as \ufb01nal or not."
+                  "content": "It depends on whether the static method is declared as final or not."
                 }
               ]
             },
@@ -2524,13 +3040,22 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "It depends on the access modi\ufb01er of the sta\u019fc method."
+                  "content": "It depends on the access modifier of the static method."
                 }
               ]
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Static methods are bound to the class rather than the instance (static binding). If a subclass defines a"
+            },
+            {
+              "type": "code",
+              "content": "static method with the same signature, it \"hides\" the parent method rather than overriding it."
+            }
+          ],
           "images": []
         },
         {
@@ -2585,13 +3110,18 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Run\u019fme Error"
+                  "content": "Runtime Error"
                 }
               ]
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The `fun` method is a recursive function calculating the factorial of `n`. For input 5, it calculates 5 * 4 * 3\n* 2 * 1 = 120."
+            }
+          ],
           "images": []
         },
         {
@@ -2615,7 +3145,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Abstract classes can be instan\u019fated directly."
+                  "content": "Abstract classes can be instantiated directly."
                 }
               ]
             },
@@ -2633,7 +3163,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "A class inheri\u019fng from an abstract class must implement all its abstract methods unless it is\nitself abstract."
+                  "content": "A class inheriting from an abstract class must implement all its abstract methods unless it is\nitself abstract."
                 }
               ]
             },
@@ -2642,13 +3172,18 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "Abstract classes can be marked as \ufb01nal."
+                  "content": "Abstract classes can be marked as final."
                 }
               ]
             }
           ],
           "correctOptionId": "c",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "Abstract classes cannot be instantiated. Any concrete subclass (non-abstract) must provide\nimplementations for all abstract methods defined in the parent abstract class."
+            }
+          ],
           "images": []
         },
         {
@@ -2685,7 +3220,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "error: cannot assign a value to \ufb01nal variable a"
+                  "content": "error: cannot assign a value to final variable a"
                 }
               ]
             },
@@ -2709,7 +3244,12 @@
             }
           ],
           "correctOptionId": "b",
-          "solutionBlocks": [],
+          "solutionBlocks": [
+            {
+              "type": "text",
+              "content": "The variable `a` is declared as `final` in the superclass. While it is inherited, its value cannot be modified\n(re-assigned) by the subclass, causing a compilation error."
+            }
+          ],
           "images": []
         }
       ]
@@ -2776,7 +3316,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The default access modi\ufb01er allows access within the same package only.\nIt is applied when no access modi\ufb01er is written.\nRevise package-level access rules carefully."
+              "content": "The default access modifier allows access within the same package only.\nIt is applied when no access modifier is written.\nRevise package-level access rules carefully."
             }
           ],
           "images": []
@@ -2838,7 +3378,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The parent class constructor is invoked \ufb01rst automatically.\nThis happens through an implicit call to super().\nRevisit inheritance basics and constructor order."
+              "content": "The parent class constructor is invoked first automatically.\nThis happens through an implicit call to super().\nRevisit inheritance basics and constructor order."
             }
           ],
           "images": []
@@ -2904,7 +3444,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "If no super() or this() is included explicitly within the derived class constructor, the super() is implicitly\ninvoked by the compiler. Therefore, in this case, the Person class constructor is called \ufb01rst and then the\nEmployee class constructor is called. Up casting is allowed."
+              "content": "If no super() or this() is included explicitly within the derived class constructor, the super() is implicitly\ninvoked by the compiler. Therefore, in this case, the Person class constructor is called first and then the\nEmployee class constructor is called. Up casting is allowed."
             }
           ],
           "images": []
@@ -2992,7 +3532,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "de\ufb01ne"
+                  "content": "define"
                 }
               ]
             },
@@ -3028,7 +3568,7 @@
           "solutionBlocks": [
             {
               "type": "code",
-              "content": "The `package` keyword is used in Java to de\ufb01ne a package. For example, `package mypackage;` de\ufb01nes a"
+              "content": "The `package` keyword is used in Java to define a package. For example, `package mypackage;` defines a"
             },
             {
               "type": "text",
@@ -3094,7 +3634,7 @@
           "solutionBlocks": [
             {
               "type": "code",
-              "content": "The syntax `import package.ClassName;` imports a speci\ufb01c class from a package. For example, `import\njava.util.Scanner;` imports the `Scanner` class from the `java.util` package."
+              "content": "The syntax `import package.ClassName;` imports a specific class from a package. For example, `import\njava.util.Scanner;` imports the `Scanner` class from the `java.util` package."
             }
           ],
           "images": []
@@ -3172,7 +3712,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The output of both the program are 22. Therefore, option c is correct and we can eliminate option d that\nthe operators don\u2019t work. Further, the operators are doing exactly what they are supposed to do i.e. pre-\nincrement \ufb01rst increases the values and post-increment increases the value during the next operation."
+              "content": "The output of both the program are 22. Therefore, option c is correct and we can eliminate option d that\nthe operators don\u2019t work. Further, the operators are doing exactly what they are supposed to do i.e. pre-\nincrement first increases the values and post-increment increases the value during the next operation."
             },
             {
               "type": "code",
@@ -3320,7 +3860,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "If no access modi\ufb01er is speci\ufb01ed for a class, it gets the default access level, making it accessible only\nwithin the same package."
+              "content": "If no access modifier is specified for a class, it gets the default access level, making it accessible only\nwithin the same package."
             }
           ],
           "images": []
@@ -3382,7 +3922,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The `private` modi\ufb01er provides the most restrictive access, allowing access only within the class where it\nis de\ufb01ned."
+              "content": "The `private` modifier provides the most restrictive access, allowing access only within the class where it\nis defined."
             }
           ],
           "images": []
@@ -7316,7 +7856,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "To establish a connection to a database using JDBC, you use the DriverManager.getConnection() method.\nThis method takes a JDBC URL, username, and password as parameters and returns a Connection object,\nwhich represents a connection to the database. The JDBC URL speci\ufb01es the database type, location, and\nother connection details."
+              "content": "To establish a connection to a database using JDBC, you use the DriverManager.getConnection() method.\nThis method takes a JDBC URL, username, and password as parameters and returns a Connection object,\nwhich represents a connection to the database. The JDBC URL specifies the database type, location, and\nother connection details."
             }
           ],
           "images": []
@@ -7696,7 +8236,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The correct order to close database resources is to \ufb01rst close the ResultSet, then the Statement, and\n\ufb01nally the Connection. This ensures that all resources are properly released in the correct sequence."
+              "content": "The correct order to close database resources is to first close the ResultSet, then the Statement, and\nfinally the Connection. This ensures that all resources are properly released in the correct sequence."
             }
           ],
           "images": []
@@ -8257,7 +8797,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "\ufb01nally"
+                  "content": "finally"
                 }
               ]
             },
@@ -8266,7 +8806,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "exception \ufb01nished"
+                  "content": "exception finished"
                 }
               ]
             },
@@ -8275,7 +8815,7 @@
               "blocks": [
                 {
                   "type": "text",
-                  "content": "\ufb01nally exception \ufb01nished"
+                  "content": "finally exception finished"
                 }
               ]
             },
@@ -8425,7 +8965,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The following is the output of the program for di\ufb00erent values of X and Y:\na. when X = 6 and Y = 5 output is 40\nb. when X = 2 and Y = 7 output is 42\nc. when X = 1 and Y = 10 output is 45\nd. when X = 4 and Y = 5 output is 36"
+              "content": "The following is the output of the program for different values of X and Y:\na. when X = 6 and Y = 5 output is 40\nb. when X = 2 and Y = 7 output is 42\nc. when X = 1 and Y = 10 output is 45\nd. when X = 4 and Y = 5 output is 36"
             }
           ],
           "images": []
