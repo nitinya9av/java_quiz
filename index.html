@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Quiz Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="header-top">
+          <p class="eyebrow">Interactive Learning</p>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+            Dark Mode
+          </button>
+        </div>
+        <h1>Java Quiz</h1>
+        <p class="subtitle">
+          Mixed-format quizzes, including regular text, code snippets, and visual questions.
+        </p>
+      </header>
+
+      <section class="card control-panel" aria-label="Quiz setup controls">
+        <div class="control-grid">
+          <label class="field week-field">
+            <span>Weeks</span>
+            <div class="week-selector" aria-label="Select quiz weeks">
+              <label class="week-chip all-chip" for="allWeeksCheckbox">
+                <input id="allWeeksCheckbox" type="checkbox" checked />
+                <span>All Weeks</span>
+              </label>
+              <div id="weekChecklist" class="week-checklist"></div>
+            </div>
+          </label>
+
+          <div class="setup-side">
+            <label class="field">
+              <span>Question Count</span>
+              <select id="countSelect" aria-label="Select question count">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+                <option value="110">110</option>
+                <option value="120">120</option>
+                <option value="130">130</option>
+                <option value="140">140</option>
+              </select>
+            </label>
+
+            <label class="field toggle-field" for="shuffleToggle">
+              <span>Shuffle Questions</span>
+              <input id="shuffleToggle" type="checkbox" />
+            </label>
+
+            <label class="field toggle-field" for="shuffleOptionsToggle">
+              <span>Shuffle Options</span>
+              <input id="shuffleOptionsToggle" type="checkbox" />
+            </label>
+
+            <button id="startBtn" class="btn primary" type="button">Start Quiz</button>
+          </div>
+        </div>
+        <p id="datasetMeta" class="dataset-meta"></p>
+      </section>
+
+      <section id="quizSection" class="quiz-section hidden" aria-live="polite">
+        <div class="quiz-top card">
+          <div class="progress-row">
+            <div class="progress-main">
+              <span id="progressLabel">Question 1 of 1</span>
+              <button id="hintBtn" class="hint-btn" type="button" aria-label="Open hint for this question" title="Hint">
+                ?
+              </button>
+            </div>
+            <span id="scoreLabel">Answered: 0</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <article class="card question-card">
+          <section id="questionBody" class="block-container" aria-label="Question content"></section>
+          <section id="imageStrip" class="image-strip" aria-label="Question images"></section>
+
+          <h2 class="option-title">Choose one option</h2>
+          <section id="optionsList" class="options-list" aria-label="Answer options"></section>
+
+          <div class="action-row">
+            <button id="prevBtn" class="btn secondary" type="button">Previous Question</button>
+            <button id="nextBtn" class="btn secondary" type="button">Next Question</button>
+            <button id="submitBtn" class="btn primary" type="button">Submit Quiz</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="summarySection" class="card summary hidden" aria-live="polite">
+        <p class="eyebrow">Session Result</p>
+        <h2>Quiz Complete</h2>
+        <p id="summaryText" class="summary-text"></p>
+        <div id="reviewList" class="review-list"></div>
+        <button id="restartBtn" class="btn primary" type="button">Start Another Quiz</button>
+      </section>
+    </main>
+
+    <section id="hintModal" class="modal-overlay hidden" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="hintTitle">
+        <div class="modal-head">
+          <h3 id="hintTitle">Detailed Solution</h3>
+          <button id="hintCloseBtn" class="modal-close" type="button" aria-label="Close hint popup">
+            Close
+          </button>
+        </div>
+        <div id="hintMeta" class="modal-meta"></div>
+        <div id="hintContent" class="block-container modal-content"></div>
+      </div>
+    </section>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
