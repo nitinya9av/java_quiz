@@ -344,8 +344,12 @@
               "content": "Step 1: If x > y, then check if x > z. If true, max = x; otherwise max = z."
             },
             {
+              "type": "code",
+              "content": "Step 2: Else (meaning y >= x), check a missing condition."
+            },
+            {
               "type": "text",
-              "content": "Step 2: Else (meaning y >= x), check a missing condition.\nWhat is the missing condition to determine if y is the maximum?"
+              "content": "\nWhat is the missing condition to determine if y is the maximum?"
             }
           ],
           "options": [
@@ -531,7 +535,11 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Predict the output of the following pseudocode logic if n=5:\nSet result = 1\nLoop i from 1 to n:\nresult = result * (i - 1)\nEnd Loop\nPrint result"
+              "content": "Predict the output of the following pseudocode logic if n=5:"
+            },
+            {
+              "type": "code",
+              "content": "Set result = 1\nLoop i from 1 to n:\n    result = result * (i - 1)\nEnd Loop\nPrint result"
             }
           ],
           "options": [
@@ -969,11 +977,11 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Given 3 numbers x, y and z. In order to find the minimum using if-then-else:\nif ______ then #MISSING"
+              "content": "Given 3 numbers x, y and z. In order to find the minimum using if-then-else:"
             },
             {
-              "type": "text",
-              "content": "if x < z\nmin = x\nelse\nmax = z\nelse\nif y < z then\nmin = y\nelse\nmax = z"
+              "type": "code",
+              "content": "if ______ then #MISSING\n\nif x < z\n    min = x\nelse\n    max = z\nelse\nif y < z then\n    min = y\nelse\n    max = z"
             },
             {
               "type": "text",
@@ -1022,7 +1030,15 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "The correct logic is:\nif x < y then\nif x < z then\nmin = x\nelse\nmin = z\nelse\nif y < z then\nmin = y\nelse\nmax = z\nThis compares the first two numbers before checking with the third to find the minimum."
+              "content": "The correct logic is:"
+            },
+            {
+              "type": "code",
+              "content": "if x < y then\n    if x < z\n        min = x\n    else\n        min = z\nelse\n    if y < z then\n        min = y\n    else\n        min = z"
+            },
+            {
+              "type": "text",
+              "content": "This compares the first two numbers before checking with the third to find the minimum."
             }
           ],
           "images": []
@@ -1039,7 +1055,11 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What is the output of the following code for n = 3?\nresult = 0\nfor i = 1 to n do\nresult = result + i\nprint(result)"
+              "content": "What is the output of the following code for n = 3?"
+            },
+            {
+              "type": "code",
+              "content": "result = 0\nfor i = 1 to n do\n    result = result + i\nprint(result)"
             }
           ],
           "options": [
@@ -1101,7 +1121,15 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Consider the following pseudo-code for calculating the sum of all odd numbers in a range:\nsum = 0\nfor i = 1 to n do\nif ________________   #MISSING\nsum = sum + i\nWhat condition should be placed in ________________?"
+              "content": "Consider the following pseudo-code for calculating the sum of all odd numbers in a range:"
+            },
+            {
+              "type": "code",
+              "content": "sum = 0\nfor i = 1 to n do\n    if ________________   #MISSING\n        sum = sum + i"
+            },
+            {
+              "type": "text",
+              "content": "What condition should be placed in ________________?"
             }
           ],
           "options": [
@@ -1163,7 +1191,11 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What will be the output of the following pseudo-code if n = 4?\nresult = 1\nfor i = 1 to n do\nresult = result * (i-1+1)\nprint(result)"
+              "content": "What will be the output of the following pseudo-code if n = 4?"
+            },
+            {
+              "type": "code",
+              "content": "result = 1\nfor i = 1 to n do\n    result = result * (i-1+1)\nprint(result)"
             }
           ],
           "options": [
@@ -2078,10 +2110,6 @@
             {
               "type": "code",
               "content": "public class ArgumenTest {\n    public static void main(String[] args) {\n        Test t = new Test();\n        t.start();\n    }\n\n    static class Test {\n        void start() {\n            int a = 4;\n            int b = 5;\n            System.out.print(\"\" + 8 + 3 + \"\");\n            System.out.print(a + b);\n            System.out.print(\" \" + a + b + \"\");\n            System.out.print( a + b + \"\");\n            System.out.print(foo() + a + b + \" \");\n            System.out.println(a + b + foo());\n        }\n\n        String foo() {\n            return \"foo\";\n        }\n    }\n}"
-            },
-            {
-              "type": "text",
-              "content": "9 7 7 foo34 34foo\n839 45foo45 9foo\n839 459foo45 9foo\n9 7 7 foo 7 7foo"
             }
           ],
           "options": [
@@ -2188,15 +2216,7 @@
           "solutionBlocks": [
             {
               "type": "text",
-              "content": "Please refer to chapter 3 of  book Joy With Java for a more detailed explaination.\nEncapsulation is one of the fundamental principles of object-oriented programming. It involves bundling\nthe data (variables) and the methods (functions) that operate on the data into a single unit, typically a"
-            },
-            {
-              "type": "code",
-              "content": "class. By making certain data private and providing public methods to access or modify it, encapsulation"
-            },
-            {
-              "type": "text",
-              "content": "helps hide implementation details from the outside world while exposing only the required functionality.\nThis improves code modularity, security, and maintainability."
+              "content": "Please refer to chapter 3 of  book Joy With Java for a more detailed explaination.\nEncapsulation is one of the fundamental principles of object-oriented programming. It involves bundling\nthe data (variables) and the methods (functions) that operate on the data into a single unit, typically a class. By making certain data private and providing public methods to access or modify it, encapsulation helps hide implementation details from the outside world while exposing only the required functionality.\nThis improves code modularity, security, and maintainability."
             }
           ],
           "images": []
@@ -3651,19 +3671,15 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Consider the following 2 programs:\n// Main1.java ------------------"
+              "content": "Consider the following 2 programs:"
             },
             {
               "type": "code",
-              "content": "public class Main1{\n    public static void main(String args[]){\n        int number = 10;\n        System.out.println(number++ + ++number);\n    }\n}"
-            },
-            {
-              "type": "text",
-              "content": "// Main2.java ------------------"
+              "content": "// Main1.java ------------------\npublic class Main1{\n    public static void main(String args[]){\n        int number = 10;\n        System.out.println(number++ + ++number);\n    }\n}"
             },
             {
               "type": "code",
-              "content": "public class Main2{\n    public static void main(String args[]){\n        int number = 10;\n        System.out.println(++number + number++);\n    }\n}"
+              "content": "// Main2.java ------------------\npublic class Main2{\n    public static void main(String args[]){\n        int number = 10;\n        System.out.println(++number + number++);\n    }\n}"
             },
             {
               "type": "text",
