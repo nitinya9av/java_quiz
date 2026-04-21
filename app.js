@@ -72,7 +72,7 @@ function wireEvents() {
   els.restartBtn.addEventListener("click", resetToSetup);
   els.allWeeksCheckbox.addEventListener("change", handleAllWeeksToggle);
   els.weekChecklist.addEventListener("change", handleWeekChecklistChange);
-  els.countSelect.addEventListener("change", syncCountLimit);
+  els.countSelect.addEventListener("change", () => syncCountLimit(false));
   els.hintBtn.addEventListener("click", openHintModal);
   els.hintCloseBtn.addEventListener("click", closeHintModal);
 
@@ -211,7 +211,7 @@ function handleAllWeeksToggle() {
     }
   }
 
-  syncCountLimit();
+  syncCountLimit(true);
 }
 
 function handleWeekChecklistChange(event) {
@@ -229,7 +229,7 @@ function handleWeekChecklistChange(event) {
     els.allWeeksCheckbox.checked = true;
   }
 
-  syncCountLimit();
+  syncCountLimit(true);
 }
 
 function updateMetaText() {
@@ -267,7 +267,7 @@ function getSelectedWeekValues() {
   return getWeekCheckboxes().filter((box) => box.checked).map((box) => box.value);
 }
 
-function syncCountLimit() {
+function syncCountLimit(forceMax = false) {
   const available = getFilteredQuestions().length;
   const options = Array.from(els.countSelect.options);
 
@@ -283,7 +283,12 @@ function syncCountLimit() {
 
   const current = Number.parseInt(els.countSelect.value, 10);
   const maxEnabled = Number(enabledOptions[enabledOptions.length - 1].value);
-  if (Number.isNaN(current) || current > maxEnabled || !enabledOptions.some((option) => Number(option.value) === current)) {
+  if (
+    forceMax
+    || Number.isNaN(current)
+    || current > maxEnabled
+    || !enabledOptions.some((option) => Number(option.value) === current)
+  ) {
     els.countSelect.value = String(maxEnabled);
   }
 
@@ -318,6 +323,7 @@ function startQuiz() {
   state.quizSubmitted = false;
 
   closeHintModal();
+  setSummaryFocusMode(false);
   setQuizFocusMode(true);
   els.summarySection.classList.add("hidden");
   els.quizSection.classList.remove("hidden");
@@ -514,6 +520,7 @@ function buildReviewDetails() {
 }
 
 function renderSummary() {
+  setSummaryFocusMode(true);
   setQuizFocusMode(false);
   els.quizSection.classList.add("hidden");
   els.summarySection.classList.remove("hidden");
@@ -601,6 +608,7 @@ function renderSummary() {
 
 function resetToSetup() {
   closeHintModal();
+  setSummaryFocusMode(false);
   setQuizFocusMode(false);
   els.summarySection.classList.add("hidden");
   els.quizSection.classList.add("hidden");
@@ -693,6 +701,10 @@ function clamp(value, min, max) {
 
 function setQuizFocusMode(enabled) {
   document.body.classList.toggle("quiz-focus-mode", enabled);
+}
+
+function setSummaryFocusMode(enabled) {
+  document.body.classList.toggle("summary-focus-mode", enabled);
 }
 
 function openHintModal() {

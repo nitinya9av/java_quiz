@@ -125,6 +125,11 @@ body.quiz-focus-mode .app-shell {
   padding-top: 20px;
 }
 
+body.summary-focus-mode .app-shell {
+  max-width: 900px;
+  padding-top: 20px;
+}
+
 body.quiz-focus-mode .app-header,
 body.quiz-focus-mode .control-panel,
 body.quiz-focus-mode .summary {
@@ -132,6 +137,16 @@ body.quiz-focus-mode .summary {
 }
 
 body.quiz-focus-mode .quiz-section {
+  margin-top: 0;
+}
+
+body.summary-focus-mode .app-header,
+body.summary-focus-mode .control-panel,
+body.summary-focus-mode .quiz-section {
+  display: none !important;
+}
+
+body.summary-focus-mode .summary {
   margin-top: 0;
 }
 
@@ -898,6 +913,10 @@ body[data-theme="dark"] .modal-close {
   }
 
   body.quiz-focus-mode .app-shell {
+    padding-top: 12px;
+  }
+
+  body.summary-focus-mode .app-shell {
     padding-top: 12px;
   }
 

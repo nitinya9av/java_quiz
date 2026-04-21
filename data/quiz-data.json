@@ -2352,15 +2352,7 @@
             },
             {
               "type": "code",
-              "content": "class Example {\n    int value;\n\n    Example(int value) {\n        this.value = value; // Resolves name collision by referring to"
-            },
-            {
-              "type": "text",
-              "content": "the instance variable"
-            },
-            {
-              "type": "code",
-              "content": "    }\n}"
+              "content": "class Example {\n    int value;\n\n    Example(int value) {\n        this.value = value; // Resolves name collision by referring to the instance variable\n }\n}"
             },
             {
               "type": "text",
