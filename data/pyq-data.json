@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T07:34:55.841974+00:00",
+  "generatedAt": "2026-04-23T07:47:45.152837+00:00",
   "summary": {
     "weekCount": 3,
     "questionCount": 365,
@@ -666,11 +666,48 @@
             },
             {
               "type": "text",
-              "content": "What does System.in stands for in the above declaration?\nAny file storing data\nRefers to the standard input stream, which is typically the keyboard by default.\nReference to scanner as an input device\nIt is a mouse as an input device"
+              "content": "What does System.in stands for in the above declaration?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Any file storing data"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Refers to the standard input stream, which is typically the keyboard by default."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Reference to scanner as an input device"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It is a mouse as an input device"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -697,14 +734,47 @@
             {
               "type": "code",
               "content": "public class VarPrint {\n    int x = 30;\n    static int y = 20;\n\n    public static void main(String[] args) {\n        VarPrint t1 = new VarPrint();\n        t1.x = 88;\n        t1.y = 99;\n        int z1 = t1.x + t1.y;\n        VarPrint t2 = new VarPrint();\n        System.out.println(t2.x + \" \" + t2.y + \" \" + z1);\n    }\n}"
-            },
-            {
-              "type": "text",
-              "content": "30 99 178\n30 88 129\n30 99 187\n88 99 178"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 99 178"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 88 129"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "30 99 187"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "88 99 178"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -731,14 +801,47 @@
             {
               "type": "code",
               "content": "public class ArgumenTest {\n    public static void main(String[] args) {\n        Test t = new Test();\n        t.start();\n    }\n\n    static class Test {\n        void start() {\n            int a = 4;\n            int b = 5;\n            System.out.print(\"\" + 8 + 3 + \"\");\n            System.out.print(a + b);\n            System.out.print(\" \" + a + b + \"\");\n            System.out.print(foo() + a + b + \" \");\n            System.out.println(a + b + foo());\n        }\n\n        String foo() {\n            return \"foo\";\n        }\n    }\n}"
-            },
-            {
-              "type": "text",
-              "content": "9 7 7 foo34 34foo\n839 45foo45 9foo\n72 34 34 foo34 34foo\n9 7 7 foo 7 7foo"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "9 7 7 foo34 34foo"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "839 45foo45 9foo"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "72 34 34 foo34 34foo"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "9 7 7 foo 7 7foo"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -760,11 +863,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What is encapsulation in object-oriented programming?\nHiding implementation details and exposing only functionality\nThe process of creating multiple objects in a program\nWriting multiple methods in a single class\nUsing the this keyword to reference an object"
+              "content": "What is encapsulation in object-oriented programming?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Hiding implementation details and exposing only functionality"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The process of creating multiple objects in a program"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Writing multiple methods in a single class"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Using the this keyword to reference an object"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -794,11 +934,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is true about constructors in a class?\nConstructors must have a return type.\nConstructors are used to initialize objects.\nA class can have only one constructor.\nConstructors cannot be overloaded."
+              "content": "Which of the following is true about constructors in a class?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Constructors must have a return type."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Constructors are used to initialize objects."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "A class can have only one constructor."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Constructors cannot be overloaded."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -820,11 +997,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What does the this keyword in Java help to achieve?\nAvoiding name space collision between instance variables and method parameters\nOverloading methods in a class\nAccessing private methods in another class\nCreating multiple objects in a program"
+              "content": "What does the this keyword in Java help to achieve?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Avoiding name space collision between instance variables and method parameters"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Overloading methods in a class"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Accessing private methods in another class"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Creating multiple objects in a program"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -863,14 +1077,47 @@
             {
               "type": "text",
               "content": "What is the correct signature of the main method in Java?"
-            },
-            {
-              "type": "code",
-              "content": " public void main(String args[])\n public static void main(String args[])\n void main(String[] args)\n public static void main(String[] args)"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "public void main(String args[])"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "public static void main(String args[])"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "void main(String[] args)"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "public static void main(String[] args)"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -900,11 +1147,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is used to take runtime input in Java?\nBufferedReader\nScanner\nDataInputStream\nAll of the above"
+              "content": "Which of the following is used to take runtime input in Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "BufferedReader"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Scanner"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "DataInputStream"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "All of the above"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -926,11 +1210,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which method is used to format output in Java?\nprint()\nprintln()\nprintf()\nformat()"
+              "content": "Which method is used to format output in Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "print()"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "println()"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "printf()"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "format()"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -968,11 +1289,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which Java class is primarily used to read input from the console?\nScanner\nBufferedReader\nConsole\nDataInputStream"
+              "content": "Which Java class is primarily used to read input from the console?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Scanner"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "BufferedReader"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Console"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "DataInputStream"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4372,11 +4730,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is TRUE regarding check box and radio button?\nCheck box is used for single selection item whereas radio button is used for multiple selection.\nCheck box is used for multiple selection items whereas radio button is used for single selection.\nBoth are used for multiple as well as single item selection.\nCheckbox is always preferred than radio buttons."
+              "content": "Which of the following is TRUE regarding check box and radio button?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Check box is used for single selection item whereas radio button is used for multiple selection."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Check box is used for multiple selection items whereas radio button is used for single selection."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Both are used for multiple as well as single item selection."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Checkbox is always preferred than radio buttons."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4398,11 +4793,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is the latest graphics and media package for Java?\nApplet\nAWT\nSwing\nJavaFX"
+              "content": "Which of the following is the latest graphics and media package for Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Applet"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "AWT"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Swing"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "JavaFX"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4424,11 +4856,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is/are NOT an exception of java.awt package?\nHeadlessException\nAWTException\nFontFormatException\nIllegalStateException"
+              "content": "Which of the following is/are NOT an exception of java.awt package?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "HeadlessException"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "AWTException"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "FontFormatException"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "IllegalStateException"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4450,11 +4919,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following statement is FALSE about the update() in java.awt package?\nSets the color of the graphics context to be the foreground color of this component.\nCalls this component's paint method to completely redraw this component.\nUpdates the component by checking an online repository.\nClears this component by filling it with the background color."
+              "content": "Which of the following statement is FALSE about the update() in java.awt package?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Sets the color of the graphics context to be the foreground color of this component."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Calls this component's paint method to completely redraw this component."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Updates the component by checking an online repository."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Clears this component by filling it with the background color."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4476,11 +4982,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following method is used to remove all items from scrolling list in java.awt.list?\nhide()\nremove()\nclear()\nclose()"
+              "content": "Which of the following method is used to remove all items from scrolling list in java.awt.list?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "hide()"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "remove()"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "clear()"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "close()"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4502,11 +5045,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which layout manager arranges components in a single row or column in Java?\nFlowLayout\nBorderLayout\nGridLayout\nCardLayout"
+              "content": "Which layout manager arranges components in a single row or column in Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "FlowLayout"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "BorderLayout"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "GridLayout"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "CardLayout"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4532,11 +5112,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What does \"AWT\" stand for in Java?\nAbstract Widget Toolkit\nAdvanced Window Toolkit\nAbstract Window Toolkit\nAdvanced Widget Toolkit"
+              "content": "What does \"AWT\" stand for in Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Abstract Widget Toolkit"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Advanced Window Toolkit"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Abstract Window Toolkit"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Advanced Widget Toolkit"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4558,11 +5175,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which AWT component is used to create a button in a GUI?\nLabel\nButton\nTextField\nCheckbox"
+              "content": "Which AWT component is used to create a button in a GUI?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Label"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Button"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "TextField"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Checkbox"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4585,14 +5239,47 @@
             {
               "type": "text",
               "content": "Which of the following is TRUE about the following GUI?"
-            },
-            {
-              "type": "text",
-              "content": "There is a Frame and two TextFields.\nThere is a Frame with two Labels and two non-editable TextFields.\nThere are two Labels.\nThere is a Frame with two Labels and two TextFields."
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "There is a Frame and two TextFields."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "There is a Frame with two Labels and two non-editable TextFields."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "There are two Labels."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "There is a Frame with two Labels and two TextFields."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -4614,11 +5301,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is TRUE about check box in Java?\nA check box can\u2019t be in either an \"on\" (true) or \"off\" (false) state.\nClicking on a check box changes its state from \"on\" to \"off,\" or from \"off\" to \"on.\"\nA check box can be in an \"on\" (true) and in \"off\" (false) state simultaneously.\nCheck boxes cannot be grouped together."
+              "content": "Which of the following is TRUE about check box in Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "A check box can\u2019t be in either an \"on\" (true) or \"off\" (false) state."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Clicking on a check box changes its state from \"on\" to \"off,\" or from \"off\" to \"on.\""
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "A check box can be in an \"on\" (true) and in \"off\" (false) state simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Check boxes cannot be grouped together."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5326,19 +6050,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which Swing component is used to create a button?\nJLabel"
-            },
-            {
-              "type": "code",
-              "content": " JButton"
-            },
-            {
-              "type": "text",
-              "content": "JTextField\nJPanel"
+              "content": "Which Swing component is used to create a button?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "JLabel"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "JButton"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "JTextField"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "JPanel"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "code",
@@ -5360,11 +6113,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What does a toggle button in Java do?\nIt switches between two states, like on/off or enabled/disabled.\nIt only changes the color of the button when clicked.\nIt displays text inside the button.\nIt opens a new window when clicked."
+              "content": "What does a toggle button in Java do?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It switches between two states, like on/off or enabled/disabled."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It only changes the color of the button when clicked."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It displays text inside the button."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It opens a new window when clicked."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5386,11 +6176,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What is the primary purpose of SQL(Structured Query Language) in Java application ?\nTo create and amange user interfaces\nTo interact with databases for data retrieval and manipulation\nTo performa systme-level operation like file management\nTo handle memory allocation in Java programs"
+              "content": "What is the primary purpose of SQL(Structured Query Language) in Java application ?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To create and amange user interfaces"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To interact with databases for data retrieval and manipulation"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To performa systme-level operation like file management"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To handle memory allocation in Java programs"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5416,11 +6243,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which method is used in Java to check if a network interface is up and running?\nisActive()\nisUp()\nisRunning()\nisConnected()"
+              "content": "Which method is used in Java to check if a network interface is up and running?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "isActive()"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "isUp()"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "isRunning()"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "isConnected()"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5442,19 +6306,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following are considered as basic networking components in Java?\nSocket and ServerSocket"
-            },
-            {
-              "type": "code",
-              "content": " String and Integer\n JFrame and Jbutton"
-            },
-            {
-              "type": "text",
-              "content": "Scanner and System"
+              "content": "Which of the following are considered as basic networking components in Java?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Socket and ServerSocket"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "String and Integer"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "JFrame and Jbutton"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Scanner and System"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5484,11 +6377,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "In context of the following URL, identify the correct option.\nhttps://nptel.ac.in\nThere is no protocol provided in the above link.\nThe website provides a secure connection.\nThe given link is incomplete and hence cannot open a website.\nThe ac.in refers to the domain."
+              "content": "In context of the following URL, identify the correct option.\nhttps://nptel.ac.in"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "There is no protocol provided in the above link."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The website provides a secure connection."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The given link is incomplete and hence cannot open a website."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The ac.in refers to the domain."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5510,11 +6440,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is/are application layer protocol(s)?\nTCP\nUDP\nARP\nSMTP"
+              "content": "Which of the following is/are application layer protocol(s)?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "TCP"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "UDP"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "ARP"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "SMTP"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5674,11 +6641,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which class in Java is used to create a server socket?\nSocket\nServerSocket\nDatagramSocket\nHttpURLConnection"
+              "content": "Which class in Java is used to create a server socket?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Socket"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "ServerSocket"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "DatagramSocket"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "HttpURLConnection"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5700,11 +6704,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What is the full form of JDBC?\nJava Database Connectivity\nJava Data Code\nJava Data Communication\nJava Development Connectivity"
+              "content": "What is the full form of JDBC?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Java Database Connectivity"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Java Data Code"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Java Data Communication"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Java Development Connectivity"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5751,14 +6792,47 @@
             {
               "type": "text",
               "content": "What should replace // INSERT CODE HERE ?"
-            },
-            {
-              "type": "code",
-              "content": " DriverManager.connect(\"mysql:localhost:mydb\", \"user\", \"password\");\n DriverManager.getConnection(\"jdbc:mysql://localhost:3306/mydb\", \"user\", \"password\");\n Connection.get(\"jdbc:mysql://localhost:3306/mydb\", \"user\", \"password\");\n Driver.connect(\"jdbc:mysql://localhost:mydb\", \"user\", \"password\");"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "DriverManager.connect(\"mysql:localhost:mydb\", \"user\", \"password\");"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "DriverManager.getConnection(\"jdbc:mysql://localhost:3306/mydb\", \"user\", \"password\");"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "Connection.get(\"jdbc:mysql://localhost:3306/mydb\", \"user\", \"password\");"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "Driver.connect(\"jdbc:mysql://localhost:mydb\", \"user\", \"password\");"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5800,11 +6874,48 @@
             },
             {
               "type": "code",
-              "content": "users\");)?\n ResultSet rs = stmt.executeQuery(\"SELECT * FROM users\");\n ResultSet rs = stmt.runQuery(\"SELECT * FROM users\");\n ResultSet rs = stmt.execute(\"users SELECT * FROM\");\n ResultSet rs = stmt.fetch(\"SELECT * FROM users\");"
+              "content": "users\");)?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "ResultSet rs = stmt.executeQuery(\"SELECT * FROM users\");"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "ResultSet rs = stmt.runQuery(\"SELECT * FROM users\");"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "ResultSet rs = stmt.execute(\"users SELECT * FROM\");"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "ResultSet rs = stmt.fetch(\"SELECT * FROM users\");"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5842,11 +6953,48 @@
             },
             {
               "type": "text",
-              "content": "Compilation Error\nRuntime Error\nLaptop\nPhone\nTablet\nNo Output"
+              "content": "Compilation Error\nRuntime Error"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Laptop"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Phone"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Tablet"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "No Output"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5885,14 +7033,47 @@
             {
               "type": "text",
               "content": "What should replace // INSERT CODE HERE ?"
-            },
-            {
-              "type": "code",
-              "content": " conn.createStatement(query);\n conn.prepareStatement(query);\n conn.execute(query);\n conn.runStatement(query);"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "conn.createStatement(query);"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "conn.prepareStatement(query);"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "conn.execute(query);"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "conn.runStatement(query);"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5943,14 +7124,47 @@
             {
               "type": "code",
               "content": "SELECT * FROM users;"
-            },
-            {
-              "type": "text",
-              "content": "I, II, and III\nOnly I and II\nOnly I\nI, II, III and IV"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "I, II, and III"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Only I and II"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Only I"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "I, II, III and IV"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5972,11 +7186,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "What is the purpose of the DriverManager class in JDBC?\nTo manage database connections.\nTo execute SQL queries.\nTo fetch data from a database.\nTo represent a database record."
+              "content": "What is the purpose of the DriverManager class in JDBC?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To manage database connections."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To execute SQL queries."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To fetch data from a database."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "To represent a database record."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -5998,11 +7249,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "How do you establish a connection to a database using JDBC?\nBy creating an instance of the Connection interface\nBy using the DriverManager.getConnection() method\nBy implementing the Connection interface\nBy extending the Connection class"
+              "content": "How do you establish a connection to a database using JDBC?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "By creating an instance of the Connection interface"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "By using the DriverManager.getConnection() method"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "By implementing the Connection interface"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "By extending the Connection class"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -6024,11 +7312,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which method executes a simple query and returns a single Result Set object?\nexecuteQuery()\nexecuteUpdate()\nexecute()\nrun()"
+              "content": "Which method executes a simple query and returns a single Result Set object?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "executeQuery()"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "executeUpdate()"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "execute()"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "run()"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -6050,11 +7375,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which package in Java contains the classes and interfaces for JDBC?\njava.sql\njava.io\njava.db\njava.net"
+              "content": "Which package in Java contains the classes and interfaces for JDBC?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "java.sql"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "java.io"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "java.db"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "java.net"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [],
           "images": []
         },
@@ -8093,7 +9455,7 @@
               ]
             }
           ],
-          "correctOptionId": "",
+          "correctOptionId": "b",
           "solutionBlocks": [],
           "images": []
         },
@@ -8114,11 +9476,48 @@
             },
             {
               "type": "text",
-              "content": "What is the output of the above program?\na) 6\nb) 10\nc) 21\nd) error"
+              "content": "What is the output of the above program?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "6"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "10"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "21"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "error"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "text",
@@ -8144,11 +9543,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "If a class inheriting an abstract class does not define all of its functions then it will be known\nas?\na) Default\nb) Abstract\nc) A simple class\nd) Static class\nAnswer: b\nExplanation: Any subclass of an abstract class must either implement all of the abstract methods in\nthe superclass or be itself declared abstract.\n______________________________________________________________________"
+              "content": "If a class inheriting an abstract class does not define all of its functions then it will be known\nas?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Default"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Abstract"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "A simple class"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Static class"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [],
           "images": []
         },
@@ -8166,14 +9602,47 @@
             {
               "type": "text",
               "content": "Which among the following best describes polymorphism?"
-            },
-            {
-              "type": "text",
-              "content": "a) It is the ability for many messages/data to be processed in one way\nb) It is the ability for a message/data to be processed in only 1 form\nc) It is the ability for a message/data to be processed in more than one form\nd) It is the ability for undefined message/data to be processed in at least one way"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It is the ability for many messages/data to be processed in one way"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It is the ability for a message/data to be processed in only 1 form"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It is the ability for a message/data to be processed in more than one form"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "It is the ability for undefined message/data to be processed in at least one way"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -8270,27 +9739,48 @@
             },
             {
               "type": "text",
-              "content": "All the variables of the interface should be?\na) default and final\nb) default and static\nc) public, static and final\nd) protect, static and final"
-            },
-            {
-              "type": "text",
-              "content": "Answer: c"
-            },
-            {
-              "type": "text",
-              "content": "Explanation: Variables of an interface are public, static, and final by default because the interfaces\ncannot be instantiated, final ensures the value assigned cannot be changed with the implementing"
-            },
-            {
-              "type": "code",
-              "content": "class and public for it to be accessible by all the implementing classes."
-            },
-            {
-              "type": "text",
-              "content": "______________________________________________________________________________"
+              "content": "All the variables of the interface should be?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "default and final"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "default and static"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "public, static and final"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "protect, static and final"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [],
           "images": []
         },
@@ -8307,11 +9797,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Disadvantage(s) of inheritance in Java programming is/are\na) Code readability\nb) two classes (base and inherited class) get tightly coupled\nc) Code maintainability\nd) Code reusability\n."
+              "content": "Disadvantage(s) of inheritance in Java programming is/are"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Code readability"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "two classes (base and inherited class) get tightly coupled"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Code maintainability"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Code reusability\n."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [],
           "images": []
         },
@@ -8328,15 +9855,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "When does method overloading is determined?\na) At run time\nb) At coding time\nc) At compile time\nd) At execution time"
-            },
-            {
-              "type": "text",
-              "content": "Answer: c\nExplanation: Overloading is determined at compile time. Hence, it is also known as compile\ntime polymorphism.\n_____________________________________________________________________________"
+              "content": "When does method overloading is determined?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "At run time"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "At coding time"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "At compile time"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "At execution time"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [],
           "images": []
         },
@@ -10149,15 +11709,48 @@
             },
             {
               "type": "text",
-              "content": "to get another turn at the CPU?\na) After thread A is notified, or after two seconds.\nb) Two seconds after thread A is notified.\nc) After the lock on B is released, or after two seconds.\nd) Two seconds after lock B is released.\nAnswer : a"
-            },
-            {
-              "type": "text",
-              "content": "Explanation: Either of the two events (notification or wait time expiration) will make the thread\nbecome a candidate for running again\n____________________________________________________________________________"
+              "content": "to get another turn at the CPU?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "After thread A is notified, or after two seconds."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Two seconds after thread A is notified."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "After the lock on B is released, or after two seconds."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Two seconds after lock B is released."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [],
           "images": []
         },
@@ -10371,23 +11964,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of these keywords is not a part of exception handling?\na) try\nb) finally\nc) thrown\nd) catch"
-            },
-            {
-              "type": "text",
-              "content": "Answer: a,b,d\nExplanation: Exceptional handling is managed via 5 keywords \u2013 try, catch, throws, throw and\nfinally.\n____________________________________________________________\n************END************"
-            },
-            {
-              "type": "text",
-              "content": "Assignment7"
-            },
-            {
-              "type": "text",
-              "content": "Total mark: 10 \u00d7 1 = 10\n______________________________________________________________________________"
+              "content": "Which of these keywords is not a part of exception handling?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "try"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "finally"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "thrown"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "catch"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [],
           "images": []
         },
@@ -13705,14 +15323,47 @@
             {
               "type": "code",
               "content": "void solve() {\n    int a = 3;\n    int res = a++ + ++a + a++ + ++a;\n    printf(\"%d\", res);\n}\nint main() {\n    solve();\n    return 0;\n}"
-            },
-            {
-              "type": "text",
-              "content": "12\n24\n20\n18"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "12"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "24"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "20"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "18"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13755,14 +15406,47 @@
             {
               "type": "code",
               "content": "void solve() {\n    int x = printf(\"Hello\");\n    printf(\" %d\", x);\n}\nint main() {\n    solve();\n    return 0;\n}"
-            },
-            {
-              "type": "text",
-              "content": "10\n5\n1\n0"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "10"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "5"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "1"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "0"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13789,14 +15473,47 @@
             {
               "type": "code",
               "content": "int (*p)[5];"
-            },
-            {
-              "type": "text",
-              "content": "The statement will create an array p of pointers.\nhe statement has an error.\nThe statement will create an array p of integers.\nNone of the above"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The statement will create an array p of pointers."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "he statement has an error."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The statement will create an array p of integers."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "None of the above"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "code",
@@ -13818,11 +15535,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "The size of a union is determined by:\nThe sum of all the members\u2019 sizes\nThe biggest member of the union\nThe last member of the union\nThe first member of the union"
+              "content": "The size of a union is determined by:"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The sum of all the members\u2019 sizes"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The biggest member of the union"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The last member of the union"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "The first member of the union"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13849,14 +15603,47 @@
             {
               "type": "code",
               "content": "int main()\n{\n        int *ptr, a = 10;\n        ptr = &a;\n        *ptr += 1;\n        printf(\"%d,%d\", *ptr, a);\n}"
-            },
-            {
-              "type": "text",
-              "content": "10, 10\n10, 11\n11, 10\n11, 11"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "10, 10"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "10, 11"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "11, 10"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "11, 11"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13887,14 +15674,47 @@
             {
               "type": "code",
               "content": "int main()\n{\n   printf(5 + \"Test_Quiz\");\n   return 0;\n}"
-            },
-            {
-              "type": "text",
-              "content": "Test\nQuiz\n1005\nCompile-time error"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Test"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Quiz"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "1005"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Compile-time error"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13916,19 +15736,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "Which of the following is not a storage class specifier in C?\nauto\nregister"
-            },
-            {
-              "type": "code",
-              "content": " static"
-            },
-            {
-              "type": "text",
-              "content": "volatile"
+              "content": "Which of the following is not a storage class specifier in C?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "auto"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "register"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "static"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "volatile"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13950,11 +15799,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "In C, static storage class cannot be used with:\nGlobal variable\nFunction parameter\nFunction name\nLocal variable"
+              "content": "In C, static storage class cannot be used with:"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Global variable"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Function parameter"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Function name"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Local variable"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -13981,14 +15867,47 @@
             {
               "type": "code",
               "content": "int main()\n{\n    char str[20] = \"Test_Quiz\";\n    printf (\"%d\", sizeof(str));\n    return 0;\n}"
-            },
-            {
-              "type": "text",
-              "content": "9\n10\nGarbage value\n20"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "9"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "10"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Garbage value"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "20"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -14015,14 +15934,47 @@
             {
               "type": "code",
               "content": "int main()\n{\n    int i = 1;\n    for (;;)\n    {\n        printf(\"%d\", i++);\n        if (i > 10)\n            break;\n    }\n}"
-            },
-            {
-              "type": "text",
-              "content": "ERROR: The condition part in the for loop is required.\nERROR: The two semicolons should be dropped.\nERROR: The for loop should be replaced by a while loop.\nNo error."
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "ERROR: The condition part in the for loop is required."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "ERROR: The two semicolons should be dropped."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "ERROR: The for loop should be replaced by a while loop."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "No error."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -14048,11 +16000,48 @@
             },
             {
               "type": "code",
-              "content": "if(x==1)\n{\n    x=0;\n}\nelse if(x==0)\n{\n    x=1;\n}\n x = 1 + x;\n x = 1 - x;\n x = x - 1;\n x = 1 % x;"
+              "content": "if(x==1)\n{\n    x=0;\n}\nelse if(x==0)\n{\n    x=1;\n}"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "x = 1 + x;"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "x = 1 - x;"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "x = x - 1;"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "code",
+                  "content": "x = 1 % x;"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "code",
@@ -14083,14 +16072,47 @@
             {
               "type": "code",
               "content": "{\n      int i;\n      float j;\n};\nstruct node *s[10];"
-            },
-            {
-              "type": "text",
-              "content": "An array, each element of which is pointer to a structure of type node.\nA structure of 2 fields, each field being a pointer to an array of 10 elements.\nA structure of 3 fields: an integer, a float, and an array of 10 elements.\nAn array, each element of which is a structure of type node."
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "An array, each element of which is pointer to a structure of type node."
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "A structure of 2 fields, each field being a pointer to an array of 10 elements."
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "A structure of 3 fields: an integer, a float, and an array of 10 elements."
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "An array, each element of which is a structure of type node."
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "a",
           "solutionBlocks": [
             {
               "type": "code",
@@ -14117,14 +16139,47 @@
             {
               "type": "code",
               "content": "void swap (int a, int b)\n{\n int temp;\n temp = a;\n a = b;\n b = temp;\n}"
-            },
-            {
-              "type": "text",
-              "content": "call swap(x, y)\ncall swap(&x, &y)\ncall swap(*x, *y)\nswap(x, y) cannot be used to swap the variables"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "call swap(x, y)"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "call swap(&x, &y)"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "call swap(*x, *y)"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "swap(x, y) cannot be used to swap the variables"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "d",
           "solutionBlocks": [
             {
               "type": "text",
@@ -14151,14 +16206,47 @@
             {
               "type": "code",
               "content": "int main()\n{\n    int arr[]={12,13, 14, 1, 6};\n    printf(\"%u, %u, %u\", arr, &arr[0], &arr);\n    return 0;\n}"
-            },
-            {
-              "type": "text",
-              "content": "2300, 2200, 2500\n2200, 2200, 2200\n2300, 2400, 2500\n2200, 2200, 2300"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "2300, 2200, 2500"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "2200, 2200, 2200"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "2300, 2400, 2500"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "2200, 2200, 2300"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "b",
           "solutionBlocks": [
             {
               "type": "text",
@@ -14180,11 +16268,48 @@
           "questionBlocks": [
             {
               "type": "text",
-              "content": "In C/ C++, if you pass an array as an argument to a function, what actually gets passed?\nValue of elements in array\nFirst element of the array\nBase address of the array\nAddress of the last element of array"
+              "content": "In C/ C++, if you pass an array as an argument to a function, what actually gets passed?"
             }
           ],
-          "options": [],
-          "correctOptionId": "",
+          "options": [
+            {
+              "id": "a",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Value of elements in array"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "First element of the array"
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Base address of the array"
+                }
+              ]
+            },
+            {
+              "id": "d",
+              "blocks": [
+                {
+                  "type": "text",
+                  "content": "Address of the last element of array"
+                }
+              ]
+            }
+          ],
+          "correctOptionId": "c",
           "solutionBlocks": [
             {
               "type": "text",
