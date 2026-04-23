@@ -1,4 +1,6 @@
 const state = {
+  datasets: {},
+  activeSection: "quiz",
   dataset: null,
   quizQuestions: [],
   currentIndex: 0,
@@ -9,8 +11,31 @@ const state = {
 
 const THEME_KEY = "java-quiz-theme";
 
+const DATASET_CONFIG = {
+  quiz: {
+    path: "./data/quiz-data.json",
+    subtitle: "Mixed-format quizzes, including regular text, code snippets, and visual questions.",
+    groupFilterLabel: "Weeks",
+    allGroupsLabel: "All Weeks",
+    groupSingular: "week",
+    groupPlural: "weeks",
+  },
+  pyq: {
+    path: "./data/pyq-data.json",
+    subtitle: "PYQ section with previous-year style questions from curated PDF sets.",
+    groupFilterLabel: "PYQ Papers",
+    allGroupsLabel: "All PYQ Papers",
+    groupSingular: "paper",
+    groupPlural: "papers",
+  },
+};
+
 const els = {
   themeToggle: document.getElementById("themeToggle"),
+  appSubtitle: document.getElementById("appSubtitle"),
+  sectionSwitch: document.getElementById("sectionSwitch"),
+  groupFilterLabel: document.getElementById("groupFilterLabel"),
+  allGroupsLabel: document.getElementById("allGroupsLabel"),
   allWeeksCheckbox: document.getElementById("allWeeksCheckbox"),
   weekChecklist: document.getElementById("weekChecklist"),
   countSelect: document.getElementById("countSelect"),
@@ -45,7 +70,7 @@ const els = {
 };
 
 init().catch((error) => {
-  els.datasetMeta.textContent = `Failed to load quiz data: ${error.message}`;
+  els.datasetMeta.textContent = `Failed to load app data: ${error.message}`;
   els.startBtn.disabled = true;
 });
 
@@ -53,18 +78,79 @@ async function init() {
   initTheme();
   wireEvents();
 
-  const response = await fetch("./data/quiz-data.json", { cache: "no-store" });
+  const [quizData, pyqData] = await Promise.all([
+    loadDataset(DATASET_CONFIG.quiz.path),
+    loadDataset(DATASET_CONFIG.pyq.path),
+  ]);
+
+  state.datasets.quiz = quizData;
+  state.datasets.pyq = pyqData;
+
+  setActiveSection("quiz", { resetView: false });
+}
+
+async function loadDataset(path) {
+  const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
+    throw new Error(`HTTP ${response.status} for ${path}`);
   }
 
-  state.dataset = await response.json();
+  return response.json();
+}
+
+function getSectionConfig(section = state.activeSection) {
+  return DATASET_CONFIG[section] || DATASET_CONFIG.quiz;
+}
+
+function setActiveSection(section, options = {}) {
+  const { resetView = true } = options;
+  const nextSection = Object.hasOwn(DATASET_CONFIG, section) ? section : "quiz";
+  const nextDataset = state.datasets[nextSection];
+
+  if (!nextDataset) {
+    return;
+  }
+
+  const sectionChanged = state.activeSection !== nextSection;
+  state.activeSection = nextSection;
+  state.dataset = nextDataset;
+
+  if (sectionChanged && resetView) {
+    clearQuizSession();
+  }
+
+  updateSectionUI();
   populateWeekChecklist();
-  syncCountLimit();
+  syncCountLimit(false);
+}
+
+function updateSectionUI() {
+  const config = getSectionConfig();
+
+  if (els.appSubtitle) {
+    els.appSubtitle.textContent = config.subtitle;
+  }
+  if (els.groupFilterLabel) {
+    els.groupFilterLabel.textContent = config.groupFilterLabel;
+  }
+  if (els.allGroupsLabel) {
+    els.allGroupsLabel.textContent = config.allGroupsLabel;
+  }
+
+  if (!els.sectionSwitch) {
+    return;
+  }
+
+  for (const chip of els.sectionSwitch.querySelectorAll(".section-chip")) {
+    const isActive = chip.dataset.section === state.activeSection;
+    chip.classList.toggle("active", isActive);
+    chip.setAttribute("aria-pressed", String(isActive));
+  }
 }
 
 function wireEvents() {
   els.themeToggle.addEventListener("click", toggleTheme);
+  els.sectionSwitch.addEventListener("click", handleSectionSwitchClick);
   els.startBtn.addEventListener("click", startQuiz);
   els.prevBtn.addEventListener("click", goToPreviousQuestion);
   els.nextBtn.addEventListener("click", goToNextQuestion);
@@ -138,6 +224,21 @@ function wireEvents() {
   });
 }
 
+function handleSectionSwitchClick(event) {
+  const target = event.target;
+  if (!(target instanceof HTMLElement)) {
+    return;
+  }
+
+  const chip = target.closest(".section-chip");
+  if (!chip) {
+    return;
+  }
+
+  const nextSection = chip.dataset.section || "quiz";
+  setActiveSection(nextSection);
+}
+
 function initTheme() {
   const storedTheme = getStoredTheme();
   const initialTheme = storedTheme || getSystemTheme();
@@ -179,6 +280,11 @@ function getSystemTheme() {
 }
 
 function populateWeekChecklist() {
+  if (!state.dataset || !Array.isArray(state.dataset.weeks)) {
+    els.weekChecklist.innerHTML = "";
+    return;
+  }
+
   els.weekChecklist.innerHTML = "";
   els.allWeeksCheckbox.checked = true;
 
@@ -236,13 +342,20 @@ function updateMetaText() {
   const activeWeeks = getActiveWeeks();
   const questionCount = activeWeeks.reduce((total, week) => total + (week.questionCount || week.questions.length || 0), 0);
   const weekCount = activeWeeks.length;
+  const config = getSectionConfig();
 
-  if (els.allWeeksCheckbox.checked) {
-    els.datasetMeta.textContent = `Loaded ${questionCount} questions across ${weekCount} ${weekCount === 1 ? "week" : "weeks"}.`;
+  if (weekCount === 0) {
+    els.datasetMeta.textContent = "No questions available in this section.";
     return;
   }
 
-  const selectedLabel = weekCount === 1 ? "selected week" : "selected weeks";
+  if (els.allWeeksCheckbox.checked) {
+    const label = weekCount === 1 ? config.groupSingular : config.groupPlural;
+    els.datasetMeta.textContent = `Loaded ${questionCount} questions across ${weekCount} ${label}.`;
+    return;
+  }
+
+  const selectedLabel = weekCount === 1 ? `selected ${config.groupSingular}` : `selected ${config.groupPlural}`;
   els.datasetMeta.textContent = `Loaded ${questionCount} questions across ${weekCount} ${selectedLabel}.`;
 }
 
@@ -251,6 +364,10 @@ function getFilteredQuestions() {
 }
 
 function getActiveWeeks() {
+  if (!state.dataset || !Array.isArray(state.dataset.weeks)) {
+    return [];
+  }
+
   if (els.allWeeksCheckbox.checked) {
     return state.dataset.weeks;
   }
@@ -269,36 +386,76 @@ function getSelectedWeekValues() {
 
 function syncCountLimit(forceMax = false) {
   const available = getFilteredQuestions().length;
+  setCountOptions(available);
   const options = Array.from(els.countSelect.options);
 
-  for (const option of options) {
-    option.disabled = Number(option.value) > available;
-  }
-
-  const enabledOptions = options.filter((option) => !option.disabled);
-  if (enabledOptions.length === 0) {
+  if (options.length === 0) {
     updateMetaText();
+    els.startBtn.disabled = true;
     return;
   }
 
+  els.startBtn.disabled = false;
   const current = Number.parseInt(els.countSelect.value, 10);
-  const maxEnabled = Number(enabledOptions[enabledOptions.length - 1].value);
-  if (
-    forceMax
-    || Number.isNaN(current)
-    || current > maxEnabled
-    || !enabledOptions.some((option) => Number(option.value) === current)
-  ) {
+  const maxEnabled = Number(options[options.length - 1].value);
+  if (forceMax || Number.isNaN(current) || current > maxEnabled) {
     els.countSelect.value = String(maxEnabled);
   }
 
   updateMetaText();
 }
 
+function setCountOptions(available) {
+  const values = buildCountValues(available);
+  const currentValue = Number.parseInt(els.countSelect.value, 10);
+
+  els.countSelect.innerHTML = "";
+  for (const value of values) {
+    const option = document.createElement("option");
+    option.value = String(value);
+    option.textContent = String(value);
+    els.countSelect.appendChild(option);
+  }
+
+  if (values.length === 0) {
+    return;
+  }
+
+  if (values.includes(currentValue)) {
+    els.countSelect.value = String(currentValue);
+    return;
+  }
+
+  const preferred = values.includes(20) ? 20 : values[values.length - 1];
+  els.countSelect.value = String(preferred);
+}
+
+function buildCountValues(available) {
+  if (available <= 0) {
+    return [];
+  }
+
+  if (available <= 10) {
+    return [available];
+  }
+
+  const values = [];
+  for (let value = 10; value <= available; value += 10) {
+    values.push(value);
+  }
+
+  if (values[values.length - 1] !== available) {
+    values.push(available);
+  }
+
+  return values;
+}
+
 function startQuiz() {
   const pool = getFilteredQuestions();
   if (pool.length === 0) {
-    els.datasetMeta.textContent = "No questions available for the selected week.";
+    const config = getSectionConfig();
+    els.datasetMeta.textContent = `No questions available for the selected ${config.groupSingular}.`;
     return;
   }
 
@@ -607,6 +764,11 @@ function renderSummary() {
 }
 
 function resetToSetup() {
+  clearQuizSession();
+  syncCountLimit();
+}
+
+function clearQuizSession() {
   closeHintModal();
   setSummaryFocusMode(false);
   setQuizFocusMode(false);
@@ -617,7 +779,6 @@ function resetToSetup() {
   state.score = 0;
   state.answers.clear();
   state.quizSubmitted = false;
-  syncCountLimit();
 }
 
 function resolveOptionLabel(question, optionId) {

@@ -237,7 +237,7 @@ body[data-theme="dark"] .theme-toggle {
 
 .setup-side {
   display: grid;
-  grid-template-columns: minmax(160px, 1.15fr) repeat(2, minmax(150px, 1fr)) minmax(170px, 1fr);
+  grid-template-columns: minmax(180px, 1.25fr) minmax(140px, 1fr) repeat(2, minmax(150px, 1fr)) minmax(170px, 1fr);
   gap: 12px;
   align-items: end;
   min-width: 0;
@@ -334,6 +334,42 @@ select option:disabled {
 body[data-theme="dark"] select,
 body[data-theme="dark"] input[type="number"] {
   background: #101722;
+}
+
+.section-switch {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px;
+  background: #fffcf8;
+  min-height: 54px;
+}
+
+body[data-theme="dark"] .section-switch {
+  background: #101722;
+}
+
+.section-chip {
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink-muted);
+  font: 600 0.86rem/1 "Space Grotesk", "Segoe UI", sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.section-chip:hover {
+  transform: translateY(-1px);
+}
+
+.section-chip.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #fff;
 }
 
 .toggle-field {
